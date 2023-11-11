@@ -23,12 +23,12 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
-        this.getLogger().info("he chose the mood of fuck this shit");
+        this.getLogger().info("Starting...");
         this.getCommand("hello").setExecutor(new HelloCommand());
     }
 
     @Override
     public void onDisable() {
-        this.getLogger().info("La Flame, he hears in his head, \"the world is yours\"");
+        this.getLogger().info("Goodbye!");
     }
 }
