@@ -35,7 +35,7 @@ jobs:
         dependency-graph: generate-and-submit
     - name: generate jar
       run: ./gradlew jar
-    - name: create artifact
+    - name: upload artifact
       uses: actions/upload-artifact@v3
       with:
         name: random-farts
