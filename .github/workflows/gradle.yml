@@ -34,3 +34,9 @@ jobs:
         dependency-graph: generate-and-submit
     - name: generate jar
       run: ./gradlew jar
+    - name: upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: random-farts
+        path: ./build/libs/random-farts-0.0.1.jar
+        if-no-files-found: error
