@@ -4,7 +4,7 @@ plugins {
 
 group = "dev.klemencicblazz"
 version = "0.0.1"
-val spigotApi = "org.spigotmc:spigot-api:1.20.2-R0.1-SNAPSHOT"
+val spigotApi = "org.spigotmc:spigot-api:1.20.4-R0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()

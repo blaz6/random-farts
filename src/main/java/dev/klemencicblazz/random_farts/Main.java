@@ -11,6 +11,8 @@ import org.bukkit.plugin.java.annotation.permission.Permission;
 import org.bukkit.plugin.java.annotation.plugin.*;
 import org.bukkit.plugin.java.annotation.plugin.author.Author;
 
+import java.util.Objects;
+
 @Plugin(name = "random-farts", version = "0.0.1")
 @Description("A test plugin")
 @LoadOrder(PluginLoadOrder.POSTWORLD)
@@ -24,7 +26,7 @@ public class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         this.getLogger().info("Starting...");
-        this.getCommand("hello").setExecutor(new HelloCommand());
+        Objects.requireNonNull(this.getCommand("hello")).setExecutor(new HelloCommand());
     }
 
     @Override

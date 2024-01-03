@@ -12,7 +12,6 @@ public class HelloCommand implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         if (commandSender instanceof Player player) {
             player.sendMessage("Hello " + player.getName() + "!");
-            player.playSound(player.getLocation(), Sound.BLOCK_NOTE_BLOCK_BELL, 1.0f, 1.0f);
         } else {
             PluginLogger.getLogger("").warning("ne");
         }
