@@ -1,6 +1,5 @@
 package dev.klemencicblazz.random_farts.Commands;
 
-import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

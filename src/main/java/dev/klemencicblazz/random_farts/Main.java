@@ -16,10 +16,10 @@ import java.util.Objects;
 @Plugin(name = "random-farts", version = "0.0.1")
 @Description("A test plugin")
 @LoadOrder(PluginLoadOrder.POSTWORLD)
-@Author("klemencicblazz")
+@Author("blaz06")
 @Commands(@Command(name = "hello", desc = "hello command", permission = "test.foo", permissionMessage = "You do not have permission!", usage = "/<command>"))
+@Permission(name = "test.*", desc = "Wildcard permission", defaultValue = PermissionDefault.NOT_OP, children = { @ChildPermission(name ="test.foo") })
 @Permission(name = "test.foo", desc = "Allows foo command", defaultValue = PermissionDefault.OP)
-@Permission(name = "test.*", desc = "Wildcard permission", defaultValue = PermissionDefault.OP, children = { @ChildPermission(name ="test.foo") })
 @ApiVersion(ApiVersion.Target.v1_20)
 
 public class Main extends JavaPlugin {
